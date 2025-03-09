@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../static/images/rajicon.jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Invalid Login</title>
+</head>
+<body>
+  <div class="dialog-box">
+    <div class="dialog-content">
+      <span class="close">&times;</span>
+      <p>Invalid login. Please try again.</p>
+      <a style="text-decoration: none;" href="/login" ><button>Ok</button></a>
+    </div>
+  </div>
+</body>
+
+
+
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.dialog-box {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.dialog-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #aaa;
+  cursor: pointer;
+}
+button{
+  height: 12px;
+  padding: 10px;
+  background-color: red;
+  border-radius: 7px;
+  font-size: 12px;
+  font-display: none;
+
+}
+
+.login-error {
+  color: red;
+  font-size: 20px;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+</style>
+</html>
